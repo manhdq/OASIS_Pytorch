@@ -1,0 +1,40 @@
+                EMA_decay: 0.9999                        
+             add_vgg_loss: False                         
+               batch_size: 32                            	[default: 1]
+                    beta1: 0.0                           
+                    beta2: 0.999                         
+               channels_D: 64                            
+               channels_G: 64                            
+          checkpoints_dir: ./checkpoints                 
+           continue_train: False                         
+                 dataroot: path_to_folder/ADEChallengeData2016	[default: ./datasets/cityscapes/]
+             dataset_mode: ade20k                        	[default: coco]
+                 freq_fid: 5000                          
+               freq_print: 1000                          
+           freq_save_ckpt: 20000                         
+         freq_save_latest: 10000                         
+           freq_save_loss: 2500                          
+         freq_smooth_loss: 250                           
+                  gpu_ids: 0                             
+          lambda_labelmix: 10.0                          
+               lambda_vgg: 10.0                          
+       loaded_latest_iter: 0                             	[default: None]
+                     lr_d: 0.0004                        
+                     lr_g: 0.0001                        
+                     name: oasis_ade20k                  	[default: label2coco]
+               no_3dnoise: False                         
+                   no_EMA: False                         
+      no_balancing_inloss: False                         
+                  no_flip: False                         
+                   no_gpu: True                          	[default: False]
+              no_labelmix: False                         
+         no_spectral_norm: False                         
+               num_epochs: 200                           
+           num_res_blocks: 6                             
+              num_workers: 0                             
+          param_free_norm: syncbatch                     
+                    phase: train                         
+                     seed: 42                            
+                 spade_ks: 3                             
+               which_iter: latest                        
+                    z_dim: 64                            
